@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+android:background="@drawable/bck"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="90dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LOGIN"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:typeface="serif"
+            />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:textColorHint="@android:color/white">
+    <EditText
+        android:layout_width="280dp"
+        android:backgroundTint="@android:color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Username"
+        android:textColorHint="#89247A"
+        android:id="@+id/xloginedt1"/>
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColorHint="@android:color/white">
+    <EditText
+        android:layout_width="280dp"
+        android:backgroundTint="@android:color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:textColorHint="#89247A"
+        android:inputType="textPassword"
+        android:id="@+id/xloginedt2"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="LOG-IN"
+        android:typeface="serif"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/xloginbtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me to go to sign up page!"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:typeface="normal"
+        android:id="@+id/xlogintv1"
+        android:textColor="@android:color/white"/>
+
+
+
+</LinearLayout>
+</LinearLayout>

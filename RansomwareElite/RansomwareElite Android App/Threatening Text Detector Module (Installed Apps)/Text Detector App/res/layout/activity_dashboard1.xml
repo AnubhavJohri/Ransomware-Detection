@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bck"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textSize="50dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/dash1tv1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/dash1tv2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="RESULT:-"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:gravity="bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/dash1tv3"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"/>
+</LinearLayout>
