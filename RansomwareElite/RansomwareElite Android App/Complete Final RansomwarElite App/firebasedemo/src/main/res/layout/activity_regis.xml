@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="com.example.firebasedemo.Register"
+    android:id="@+id/ll1register"
+    android:background="@drawable/bck">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Register"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="italic|bold"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:textColorHint="@android:color/white">
+
+    <EditText
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/edt1register"
+        android:hint="Email-id"
+        android:inputType="textEmailAddress"/>
+
+       </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:textColorHint="@android:color/white">
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/edt2register"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btn1register"
+        android:text="Register"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</LinearLayout>

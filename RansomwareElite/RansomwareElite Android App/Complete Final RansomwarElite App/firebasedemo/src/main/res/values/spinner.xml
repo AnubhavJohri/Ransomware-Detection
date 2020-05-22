@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="country">Choose a country</string>
+    <string-array name="Country_Array">
+        <item>India</item>
+        <item>Israel</item>
+        <item>US</item>
+        <item>Afghanistan</item>
+        <item>Japan</item>
+        <item>China</item>
+        <item>Russia</item>
+        <item>Australia</item>
+        <item>United Kingdom</item>
+        <item>Nepal</item>
+        <item>Sri Lanka</item>
+        <item>West Indies</item>
+
+    </string-array>
+</resources>

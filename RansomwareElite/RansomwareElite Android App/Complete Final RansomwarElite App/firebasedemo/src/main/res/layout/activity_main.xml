@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.firebasedemo.MainActivity"
+    android:id="@+id/ll1main"
+    android:background="@drawable/bck">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="RansomwareElite"
+        android:textSize="50dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:textColorHint="@android:color/white">
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:id="@+id/edt1_main"
+       android:hint="Email-ID"
+       android:textColorHint="@android:color/white"
+       android:backgroundTint="@android:color/white"
+       android:textColor="@android:color/white"
+       android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:textColorHint="@android:color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:id="@+id/edt2_main"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:id="@+id/btnmain1"
+            android:layout_gravity="center_horizontal"
+            android:text="Login"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:background="@color/com_facebook_button_login_silver_background_color"/>
+
+      <com.facebook.login.widget.LoginButton
+     android:id="@+id/fblogin_button"
+     android:layout_width="match_parent"
+          android:layout_height="60dp"
+     android:layout_gravity="center_horizontal"
+     android:layout_marginTop="30dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/googlesigninbtnmain"
+        android:textAlignment="center">
+    </com.google.android.gms.common.SignInButton>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/tvmain2"
+        android:textStyle="italic"
+        android:text="Forgot Password?"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/tvmain1"
+        android:textStyle="italic"
+        android:text="If Not Registered Click HERE!"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
+</LinearLayout>

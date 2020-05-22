@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="35dp"
+    android:background="@drawable/bck"
+    tools:context="com.example.firebasedemo.UpdateInfo"
+    android:id="@+id/ll1update_info">
+
+
+    <TextView
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Register"
+        android:textAllCaps="true"
+        android:textStyle="italic|bold"
+        android:textSize="60dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="@android:color/white">
+            <EditText
+                android:textColorHint="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/edt1updateinfo"
+                android:hint="Name"
+                android:focusedByDefault="true"
+                android:textStyle="italic"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="@android:color/white">
+            <EditText
+                android:textColorHint="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/edt2updateinfo"
+                android:hint="Mobile Number"
+                android:textStyle="italic"
+                android:inputType="phone"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColorHint="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="65"
+                android:text="Gender:"
+                android:textStyle="italic"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="15dp"
+                android:paddingRight="40dp"
+                />
+
+            <RadioGroup
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/rg1main"
+                android:layout_weight="35"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:checkedButton="@id/rbmain1">
+
+                <RadioButton
+                    android:textColorHint="@android:color/white"
+                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Male"
+                    android:id="@+id/rbmain1"
+                    android:layout_weight="50"/>
+
+                <RadioButton
+                    android:textColorHint="@android:color/white"
+                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Female"
+                    android:id="@+id/rbmain2"
+                    android:layout_weight="50"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <!--For Spinner https://www.mkyong.com/android/android-spinner-drop-down-list-example -->
+        <Spinner
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/Country_Array"
+            android:prompt="@string/country"
+            android:id="@+id/spinner">
+        </Spinner>
+
+
+        <AutoCompleteTextView
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Occupation"
+            android:singleLine="true"
+            android:id="@+id/autoedt1updateinfo"
+            android:textStyle="italic"
+            />
+
+        <Button
+            android:id="@+id/btn1updateinfo"
+            android:background="@android:color/white"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:textAllCaps="true"
+            android:layout_marginTop="60dp"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

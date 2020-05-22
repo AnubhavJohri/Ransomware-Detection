@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bck"
+    android:padding="20dp">
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Suspicious Applications:"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <TextView android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/l"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Go to Main Menu"
+        android:layout_marginTop="40dp"
+        android:id="@+id/fourthbtn1"/>
+
+</LinearLayout>

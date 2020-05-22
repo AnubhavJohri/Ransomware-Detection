@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bck"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32"
+        android:text="What Do You Want To Check?"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button android:layout_width="259dp"
+        android:layout_height="74dp"
+        android:text="Specific Application?"
+        android:id="@+id/b3"
+        android:onClick="go"
+        android:padding="10dp"
+        android:background="@drawable/image45"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button android:layout_width="259dp"
+        android:layout_height="74dp"
+        android:text="Whole Device?"
+        android:id="@+id/b4"
+        android:onClick="go"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        />
+
+    <Button android:layout_width="259dp"
+        android:layout_height="40dp"
+        android:text="Go to Dashboard"
+        android:layout_marginTop="70dp"
+        android:id="@+id/btndash_menu"
+        android:onClick="go"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>
