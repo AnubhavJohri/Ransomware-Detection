@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+
+    defaultConfig {
+        applicationId "com.example.firebasedemo"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        repositories {
+            mavenCentral()//FACEBOOK REPOSITORY
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'//FACEBOOK DEPENDENCY
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'//might be wrong
+    compile 'com.android.support:support-compat:26.1.0'//might be wrong//added to add fonts
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.android.support:cardview-v7:26.1.0'//cardview dependency
+    compile 'com.android.support:recyclerview-v7:26.1.0'//recyclerview dependency
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'com.google.firebase:firebase-database:11.8.0'
+    compile 'com.android.support:design:26.1.0'//added for adding floating labels
+    //classpath 'com.google.gms:google-services:3.2.0'
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+}
+//apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.google.gms.google-services'
